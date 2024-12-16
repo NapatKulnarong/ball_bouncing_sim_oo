@@ -34,13 +34,13 @@ class WelcomePage:
         self.num_stars = 130
 
     def load_user_data(self):
-        """Load user data from CSV"""
+        """Load user data from the CSV file."""
         if not os.path.exists(self.file_path):
             with open(self.file_path, 'w') as file:
                 file.write("username,balance\n")
         with open(self.file_path, 'r') as file:
             reader = csv.DictReader(file)
-            return {row['username']: int(row['balance']) for row in reader}
+            return {row['username']: float(row['balance']) for row in reader}
 
     def save_new_user(self, username):
         """Save new username"""
