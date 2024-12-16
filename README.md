@@ -1,6 +1,6 @@
-MIDNIGHT SPACE
+**MIDNIGHT SPACE**
 _______________________________________________________________________________________________
-Description
+**Description**
 
 Midnight Space is an arcade-style game that immerses players in the role of a spaceship pilot. 
 The objective is to navigate through an infinite cosmic adventure by avoiding obstacles, 
@@ -8,7 +8,7 @@ collecting coins, and engaging in combat with UFOs. The game’s captivating vis
 sound effects, and dynamic scoreboard provide an engaging and challenging experience that will 
 test players’ reflexes and concentration.
 _______________________________________________________________________________________________
-Features
+**Features**
 - Precise Navigation: Utilize the keyboard for seamless control of the spaceship.
 
 - Evolving Challenges:
@@ -26,27 +26,26 @@ Features
   
 - Immersive Soundscape: An immersive soundtrack, featuring background music and sound effects.
 _______________________________________________________________________________________________
-Gameplay Overview
+**Gameplay Overview**
 
-Controls
+**Controls**
 - Left Arrow: Move the spaceship to the left.
 - Right Arrow: Move the spaceship to the right.
 - Up Arrow: Fire lasers to destroy UFOs.
 
-Objective
+**Objective**
 - Collect Coins: Each coin increases your balance.
 - Destroy UFOs: Eliminate UFOs to earn bonus coins.
 - Avoid Obstacles: Colliding with suns, or UFOs terminates the game.
 - Travel Farther: Distance traveled is recorded and compared on the Scoreboard.
 
-Game Over
-Upon termination, your performance statistics will be displayed, including:
-- Total Coins Collected and current Balance
-- Distance Traveled
-- Longest Distance Recorded
-- Ranking compared to the top players.
+- Game Over : Upon termination, your performance statistics will be displayed, including:
+  - Total Coins Collected and current Balance
+  - Distance Traveled
+  - Longest Distance Recorded
+  - Ranking compared to the top players.
 _______________________________________________________________________________________________
-Getting Started
+**Getting Started**
 
 1. Install Python : Ensure Python 3.12+ is installed on your system. 
    To check your version, type “python —version” in the terminal.
@@ -77,15 +76,15 @@ Getting Started
 
 5. Execute the main file : Type  “python run_ball.py”  in the terminal.
 _______________________________________________________________________________________________
-Usage
+**Usage**
 
 Demonstrate Video Link : https://youtu.be/bqQy8csVgvw
 _______________________________________________________________________________________________
-[Note : UML Class Diagram is provided in the GitHub repository]
+**[Note : UML Class Diagram is provided in the GitHub repository]**
 
-Purpose of Each Class
+**Purpose of Each Class**
 
-1. LightLine : Represents the visual “lines of light” effect in the game background, 
+**1. LightLine** : Represents the visual “lines of light” effect in the game background, 
    making the game feel more space-like.
 
    Attributes
@@ -98,7 +97,7 @@ Purpose of Each Class
    - Moves the light line vertically. 
    - Renders the light line on the screen.
 
-2. UFO : Represents an enemy UFO object in the game.
+**2. UFO** : Represents an enemy UFO object in the game.
 
    Attributes
    - x, y: Position.
@@ -109,7 +108,7 @@ Purpose of Each Class
    - Moves the UFO downward.
    - Renders the UFO on the screen.
 
-3. Spaceship : Represents the player’s spaceship.
+**3. Spaceship** : Represents the player’s spaceship.
 
    Attributes
    - width, height: Dimensions of the spaceship.
@@ -120,7 +119,7 @@ Purpose of Each Class
    - Fires lasers.
    - Checks for collisions with objects.
 
-4. Ball : Represents game objects like comets and coins.
+**4. Ball** : Represents game objects like comets and coins.
 
    Attributes
    - x, y: Position.
@@ -132,7 +131,7 @@ Purpose of Each Class
    - Moves the ball.
    - Renders the ball on the screen.
 
-5. Sun : Represents a sun in the game that players must avoid.
+**5. Sun** : Represents a sun in the game that players must avoid.
 
    Attributes
    - x, y: Position.
@@ -143,12 +142,12 @@ Purpose of Each Class
    - Moves the sun downward.
    - Renders the sun on the screen.
 
-6. Border : Represents the space frame of the game.
+**6. Border** : Represents the space frame of the game.
 
    Functionality
    - Renders the game space frame (boundary).
 
-7. UserManager : Manages user data (usernames, balances, high scores)
+**7. UserManager** : Manages user data (usernames, balances, high scores)
 
    Attributes
    - file_name: Path to the CSV file storing user data.
@@ -158,7 +157,7 @@ Purpose of Each Class
    - Updates user balance and longest distance.
    - Get top players based on distance.
 
-8. WelcomePage : Displays the welcome screen.
+**8. WelcomePage** : Displays the welcome screen.
 
    Attributes
    - file_path: Path to the user data file.
@@ -173,7 +172,7 @@ Purpose of Each Class
    - Displays a game manual.
    - Handles user login and registration.
 
-9. MidnightSpaceGame : The main game class that manages gameplay.
+**9. MidnightSpaceGame** : The main game class that manages gameplay.
 
    Attributes
    - ball_list: List of Ball objects (comets, coins).
@@ -193,21 +192,21 @@ Purpose of Each Class
   - Handles collisions between objects. 
   - Displays the game over screen and leaderboard.
 _______________________________________________________________________________________________
-Interactions Between Each Object
+**Interactions Between Each Object**
 
-• WelcomePage: Displays login screen and interacts with UserManager to validate or create user accounts.
+• **WelcomePage**: Displays login screen and interacts with UserManager to validate or create user accounts.
 
-• UserManager: Reads and writes user data to a CSV file and shares user information with MidnightSpaceGame.
+• **UserManager**: Reads and writes user data to a CSV file and shares user information with MidnightSpaceGame.
 
-• MidnightSpaceGame: Manages various objects, including Spaceships, Balls, Suns, UFOs, and LightLines. 
+• **MidnightSpaceGame**: Manages various objects, including Spaceships, Balls, Suns, UFOs, and LightLines. 
                      It updates their positions and checks for collisions during gameplay.
                      
-• Spaceships: These objects fire lasers that interact with UFO objects. They also detect collisions 
+• **Spaceships**: These objects fire lasers that interact with UFO objects. They also detect collisions 
               with the Sun, Ball, or UFO objects.
               
-• Suns: These objects are hazards that end the game when collided with by Spaceships.
+• **Suns**: These objects are hazards that end the game when collided with by Spaceships.
 _______________________________________________________________________________________________
-Extension and Modification of the Baseline Code
+**Extension and Modification of the Baseline Code**
 
 • The Comets and Coins in the game are modified from the ball.py file.
 
@@ -227,7 +226,7 @@ Extension and Modification of the Baseline Code
 
 • Integrated Pygame for background music and sound effects.
 _______________________________________________________________________________________________
-Testing 
+**Testing** 
 
 • Tested all the individual classes to ensure correct behavior.
 
@@ -235,7 +234,7 @@ Testing
 
 • Ensured that the welcome and game over screen displays correctly.
 
-Known Bugs
+**Known Bugs**
 
 • The game crashes if the specified music file is not found.
 
@@ -243,9 +242,9 @@ Known Bugs
 
 • On some devices, the animation may lag if too many objects appear simultaneously on the screen.
 _______________________________________________________________________________________________
-Project Sophistication Level : 90
+**Project Sophistication Level** : 90
 _______________________________________________________________________________________________
-Future Enhancements
+**Future Enhancements**
 
   • More game items and features such as diamonds, asteroids, black holes, double lasers.
 
@@ -255,13 +254,13 @@ Future Enhancements
 
   • Multiplayer support
 _______________________________________________________________________________________________
-Credits
+**Credits**
 
-Developer : Napat Kulnarong  
+**Developer** : Napat Kulnarong  
 
-Libraries Used in the project : Python Turtle, Pygame
+**Libraries Used in the project** : Python Turtle, Pygame
 
-Sounds
+**Sounds**
 
 https://youtu.be/f7MiaSr-0ug?si=xHgu-ZrbbZIGaGTT
 
